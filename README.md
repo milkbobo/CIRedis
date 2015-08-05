@@ -22,3 +22,5 @@ $r = $this->redisdb->connect();
 $r->set('key','value');  //设置key的值为value
 $value = $r->get('key'); //获得key的值，赋值给$value变量
 ```
+
+- 使用Redis实例的 `colse()` 方法或redisdb库的 `close()` 方法关闭连接。

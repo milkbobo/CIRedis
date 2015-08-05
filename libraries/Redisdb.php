@@ -166,4 +166,8 @@ class Redisdb {
     protected function _pconnect(){
         return $this->Redis->pconnect($this->hostname,$this->port,$this->timeout);
     }
+    
+    public function close(){
+        return $this->Redis->close();
+    }
 }
